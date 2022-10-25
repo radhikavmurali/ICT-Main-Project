@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> E-commerce Customer Satisfaction Prediction  </title>
+<link rel ="stylesheet" href="/static/css/style.css">
+</head>
+
+
+<body background ="/static/images/background1.jpg" align="left">
+             
+    <div class ='input form'>
+        <form action ='/predict' method="POST">
+            <h1 id="heading">  E-commerce Customer Satisfaction Prediction </h1>
+
+             <form>
+                
+                              
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">price</label>
+                    <input type="text" class="form-control" id="price" name="price" placeholder="price">
+                </div>
+                
+                                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">freight_value</label>
+                    <input type="text" class="form-control" id="freight_value" name="freight_value" placeholder="freight_value">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">product_category_name</label>
+                    <input type="text" class="form-control" id="product_category_name" name="product_category_name" placeholder="product_category_name">
+                </div>
+                
+                
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">product_name_lenght</label>
+                     <input type="text" class="form-control" id="product_name_lenght" name="product_name_lenght" placeholder="product_name_lenght">
+                 </div>
+                 
+                 
+                 
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">product_des._lenght</label>
+                     <input type="text" class="form-control" id="product_description_lenght" name="product_description_lenght" placeholder="product_description_lenght">
+                 </div>
+                 
+                 
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">product_photos_qty</label>
+                    <input type="text" class="form-control" id="product_photos_qty" name="product_photos_qty" placeholder="product_photos_qty">
+                </div>
+                
+                
+                
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">product_weight_g</label>
+                     <input type="text" class="form-control" id="product_weight_g" name="product_weight_g" placeholder="product_weight_g">
+                 </div>
+                 
+                 
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">seller_city</label>
+                     <input type="text" class="form-control" id="seller_city" name="seller_city" placeholder="seller_city">
+                 </div>
+                 
+                 
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">seller_state</label>
+                     <input type="text" class="form-control" id="seller_state" name="seller_state" placeholder="seller_state">
+                 </div>
+                 
+                 
+                 <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">order_status</label>
+                  <select class="form-select"id="order_status" name="order_status" aria-label="order_status">
+                      <option selected >--Select order_status--</option>
+                      <option value="1">delivered</option>
+                      <option value="2">canceled</option>
+                    </select>
+                  </div>
+                  
+                  
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1"  class="form-label"> payment_type</label>
+                  <select class="form-select" id="payment_type" name="payment_type" aria-label="Default select payment_type">
+                      <option selected >--Select payment_type --</option>
+                      <option value="Self-employed">credit_card</option>
+                      <option value="Private">boleto</option>
+                      <option value="Children">voucher</option>
+                      <option value="Gov_job">debit_card</option>
+                 </select>
+                </div>
+                
+                
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">payment_installments</label>
+                    <input type="text" class="form-control" id="payment_installments" name="payment_installments" placeholder="payment_installments">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">payment_value</label>
+                    <input type="text" class="form-control" id="payment_value" name="payment_value" placeholder="payment_value">
+                </div>
+                
+                
+                 <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">customer_city</label>
+                     <input type="text" class="form-control" id="customer_city" name="customer_city" placeholder="customer_city">
+                 </div>
+                 
+                 
+                 
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1"   class="form-label">customer_state</label>
+                      <input type="text" class="form-control" id="customer_state" name="customer_state" placeholder="customer_state">
+                  </div>
+                  
+                  
+                  
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1"   class="form-label">estimated_time</label>
+                      <input type="text" class="form-control" id="estimated_time" name="estimated_time" placeholder="estimated_time">
+                  </div>
+                  
+                  
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1"   class="form-label">actual_time</label>
+                      <input type="text" class="form-control" id="actual_time" name="actual_time" placeholder="actual_time">
+                  </div>
+                  
+                  
+                   <div class="mb-3">
+                       <label for="exampleInputEmail1"   class="form-label">diff_actual_estimated</label>
+                       <input type="text" class="form-control" id="diff_actual_estimated" name="diff_actual_estimated" placeholder="diff_actual_estimated">
+                   </div>
+                   
+                   
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1"   class="form-label">diff_approval_shipping</label>
+                        <input type="text" class="form-control" id="diff_approval_shipping" name="diff_approval_shipping" placeholder="diff_approval_shipping">
+                    </div>
+                  
+                  
+                  
+                   <div class="mb-3">
+                       <label for="exampleInputEmail1"   class="form-label">shipping_time</label>
+                       <input type="text" class="form-control" id="shipping_time" name="shipping_time" placeholder="shipping_time">
+                   </div>
+                  
+                  
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1"   class="form-label">product_size</label>
+                      <input type="text" class="form-control" id="product_size" name="product_size" placeholder="product_size">
+                  </div>
+                  
+                  
+                  
+                  <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+            </form>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
+                  
+                  
+                
+                
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+

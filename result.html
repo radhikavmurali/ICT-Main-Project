@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>E-Commerce Customer Satisfaction Prediction </title>
+<link rel = "stylesheet" href="/static/css/res.css">
+</head>
+
+
+
+<body style="background:url(/static/images/background1.jpg); 
+             backgroud-size:100%; 
+             backgroud-repeat: no-repeat">
+      
+             
+   <!-- <h2 id = "result">{{prediction_text}}</h2>-->
+    
+    {%if data==1%}
+    <h1 style="text-align:center;color:white;">Customer is satisfied</h1>
+    {%else%}
+    <h1 style="text-align:center;color:white;">Customer is Not Satisfied</h1>
+    
+    {%endif%}
+
+    <a href='/' style="text-align:center;color:white;"> Go back to home page</a>
+</body>
+</html>
